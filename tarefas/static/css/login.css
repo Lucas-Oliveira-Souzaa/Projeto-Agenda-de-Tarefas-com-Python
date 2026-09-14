@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080d16;
+    color: #b8c4d4;
+    font-family: "Courier New", monospace;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.login-container {
+    width: 100%;
+    max-width: 430px;
+    padding: 20px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.login-card {
+    background-color: #0d1420;
+
+    border: 1px solid #39ff14;
+    border-radius: 14px;
+
+    padding: 40px 35px;
+
+    box-shadow:
+        0 0 10px rgba(57, 255, 20, 0.15),
+        0 0 30px rgba(57, 255, 20, 0.08);
+}
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* LOGO */
+
+.logo {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #39ff14;
+    border-radius: 50%;
+
+    color: #39ff14;
+
+    font-size: 30px;
+    font-weight: bold;
+
+    box-shadow:
+        0 0 8px rgba(57, 255, 20, 0.5),
+        0 0 20px rgba(57, 255, 20, 0.15);
+}
+
+/* TÍTULO */
+
+.login-header h1 {
+    color: #39ff14;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 0 5px rgba(57, 255, 20, 0.5),
+        0 0 15px rgba(57, 255, 20, 0.2);
+}
+
+/* SUBTÍTULO */
+
+.login-header p {
+    color: #718096;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+}
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+.login-form {
+    width: 100%;
+}
+
+/* GRUPO DOS CAMPOS */
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* LABEL */
+
+.input-group label {
+    display: block;
+
+    color: #39ff14;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+/* INPUT */
+
+.input-group input[type="text"],
+.input-group input[type="password"] {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    background-color: #080d16;
+
+    color: #ffffff;
+
+    border: 1px solid #263449;
+    border-radius: 6px;
+
+    outline: none;
+
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+/* INPUT FOCADO */
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #39ff14;
+
+    box-shadow:
+        0 0 5px rgba(57, 255, 20, 0.4),
+        0 0 12px rgba(57, 255, 20, 0.15);
+}
+
+/* PLACEHOLDER */
+
+.input-group input::placeholder {
+    color: #536174;
+}
+
+/* =========================
+   OPÇÕES
+========================= */
+
+.login-options {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 5px 0 25px;
+
+    font-size: 13px;
+}
+
+/* LEMBRAR-ME */
+
+.remember {
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    color: #718096;
+
+    cursor: pointer;
+}
+
+.remember input {
+    accent-color: #39ff14;
+
+    cursor: pointer;
+}
+
+/* ESQUECI SENHA */
+
+.login-options a {
+    color: #39ff14;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.login-options a:hover {
+    color: #66ff4d;
+
+    text-shadow:
+        0 0 5px rgba(57, 255, 20, 0.5);
+}
+
+/* =========================
+   BOTÃO ENTRAR
+========================= */
+
+.login-button {
+    width: 100%;
+
+    padding: 13px;
+
+    background-color: #39ff14;
+
+    color: #080d16;
+
+    border: none;
+    border-radius: 6px;
+
+    font-family: "Courier New", monospace;
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.login-button:hover {
+    background-color: #66ff4d;
+
+    box-shadow:
+        0 0 8px rgba(57, 255, 20, 0.6),
+        0 0 20px rgba(57, 255, 20, 0.25);
+
+    transform: translateY(-1px);
+}
+
+/* =========================
+   CADASTRO
+========================= */
+
+.register {
+    margin-top: 28px;
+
+    padding-top: 22px;
+
+    border-top: 1px solid #1e2a3a;
+
+    text-align: center;
+}
+
+.register p {
+    color: #718096;
+
+    font-size: 13px;
+}
+
+.register a {
+    color: #39ff14;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.register a:hover {
+    color: #66ff4d;
+
+    text-shadow:
+        0 0 5px rgba(57, 255, 20, 0.5);
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 480px) {
+
+    .login-container {
+        padding: 15px;
+    }
+
+    .login-card {
+        padding: 30px 25px;
+    }
+
+    .login-header h1 {
+        font-size: 24px;
+    }
+
+    .login-options {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+}

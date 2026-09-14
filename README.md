@@ -24,9 +24,10 @@ O projeto também faz parte da minha evolução prática em **desenvolvimento ba
 
 ### Tela principal
 
-> Adicione aqui uma captura de tela da aplicação.
 
-![Agenda de Tarefas](docs/preview.png)
+
+<img width="1371" height="728" alt="foto2" src="https://github.com/user-attachments/assets/459fd109-9f86-4ff0-bdb1-dcf2d1a7af76" />
+
 
 ---
 

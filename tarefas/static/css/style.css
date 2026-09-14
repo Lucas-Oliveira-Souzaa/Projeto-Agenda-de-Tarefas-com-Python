@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #080d16;
+    color: #b8c4d4;
+    font-family: "Courier New", monospace;
+    min-height: 100vh;
+}
+
+/* Container principal */
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Título */
+h1 {
+    color: #c7d2e0;
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+
+p {
+    color: #596579;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+/* Progresso */
+.progress-container {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.progress-container label {
+    display: block;
+    color: #b8c4d4;
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+
+/* Barra de progresso */
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background-color: #202938;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4efc03;
+}
+
+.progress-count {
+    text-align: right;
+    color: #6b778a;
+    font-size: 10px;
+    margin-top: 4px;
+}
+
+/* Formulário */
+.task-form {
+    width: 100%;
+    display: flex;
+    gap: 6px;
+
+    background-color: #151c28;
+    padding: 6px;
+
+    border: 1px solid #303b4d;
+    border-radius: 5px;
+
+    margin-bottom: 12px;
+}
+
+/* Campo de texto */
+.task-form input {
+    flex: 1;
+    min-width: 0;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    color: #b8c4d4;
+
+    font-family: "Courier New", monospace;
+    font-size: 12px;
+
+    padding: 7px;
+}
+
+.task-form input::placeholder {
+    color: #687386;
+}
+
+/* Botão */
+.task-form button {
+    flex-shrink: 0;
+
+    background-color: #4efc03;
+    color: rgb(15, 15, 15);
+
+    border: none;
+    border-radius: 3px;
+
+    padding: 7px 14px;
+
+    font-family: "Courier New", monospace;
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.task-form button:hover {
+    background-color: #10fa2f;
+}
+
+/* Lista */
+.task-list {
+    width: 100%;
+    list-style: none;
+}
+
+/* Cada tarefa */
+.task-list li {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #151c28;
+
+    border: 1px solid #303b4d;
+    border-radius: 5px;
+
+    padding: 9px 10px;
+
+    margin-bottom: 7px;
+
+    min-height: 36px;
+}
+
+/* Form do checkbox */
+.task-list li form {
+    display: flex;
+    align-items: center;
+
+    margin-right: 8px;
+}
+
+/* Checkbox */
+.task-list input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+
+    accent-color: #4efc03;
+
+    cursor: pointer;
+}
+
+/* Texto da tarefa */
+.task-list span {
+    flex: 1;
+    min-width: 0;
+
+    color: #4efc03;
+
+    font-size: 11px;
+
+    overflow-wrap: anywhere;
+}
+
+/* Tarefa concluída */
+.task-list li.completed span {
+    color: #52677b;
+    text-decoration: line-through;
+}
+
+/* Excluir */
+.task-list .delete {
+    flex-shrink: 0;
+
+    color: #4efc03;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    margin-left: 8px;
+}
+
+.task-list .delete:hover {
+    color: #ff5555;
+}
+
+/* Rodapé */
+footer {
+    width: 100%;
+
+    margin-top: 18px;
+
+    text-align: center;
+
+    color: #596579;
+    font-size: 10px;
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 21px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .task-form {
+        padding: 5px;
+    }
+
+    .task-form input {
+        font-size: 11px;
+    }
+
+    .task-form button {
+        padding: 7px 11px;
+    }
+
+    .task-list li {
+        padding: 9px 8px;
+    }
+
+    .task-list span {
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   CELULARES PEQUENOS
+   ========================================= */
+
+@media (max-width: 400px) {
+
+    .container {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .task-form {
+        gap: 4px;
+    }
+
+    .task-form button {
+        padding: 9px 12px;
+    }
+
+    .task-list li {
+        padding: 8px 7px;
+    }
+
+    .task-list span {
+        font-size: 18px;
+    }
+}
+/* =========================================
+   DESKTOP
+   ========================================= */
+
+@media (min-width: 601px) {
+
+    .container {
+        max-width: 700px;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: 20px;
+        margin-bottom: 25px;
+    }
+
+    /* Progresso */
+    .progress-container label {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .progress-bar {
+        height: 7px;
+    }
+
+    .progress {
+        height: 7px;
+    }
+
+    .progress-count {
+        font-size: 11px;
+        margin-top: 5px;
+    }
+
+    /* Campo para adicionar tarefa */
+    .task-form {
+        padding: 9px;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .task-form input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .task-form button {
+        font-size: 20px;
+        padding: 12px 20px;
+    }
+
+    /* Tarefas */
+    .task-list li {
+        min-height: 48px;
+        padding: 12px 14px;
+        margin-bottom: 9px;
+    }
+
+    .task-list li form {
+        margin-right: 10px;
+    }
+
+    .task-list input[type="checkbox"] {
+        width: 17px;
+        height: 17px;
+    }
+
+    .task-list span {
+        font-size: 18px;
+    }
+
+    .task-list .delete {
+        font-size: 17px;
+        margin-left: 12px;
+    }
+
+    footer {
+        font-size: 18px;
+        margin-top: 25px;
+    }
+}
